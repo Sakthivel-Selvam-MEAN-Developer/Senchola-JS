@@ -73,6 +73,12 @@ span.position-absolute{
     backdrop-filter: blur(10px);
     border-radius: 10px;
 }
+.error{
+    width: 455px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
 
 
 @media (max-width:420px) {
@@ -98,5 +104,11 @@ span.position-absolute{
     }
     .tasks .task{
         width: 260px !important;
+    }
+    .error{
+        width: 260px;
+    }
+    .tasks{
+        margin-top: 20px !important;
     }
 }
