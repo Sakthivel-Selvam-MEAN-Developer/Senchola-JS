@@ -1,9 +1,11 @@
 {
+  "homepage": "https://Sakthivel-Selvam-MEAN-Developer.github.io/Senchola-JS",
   "name": "package.json",
   "version": "1.2.1",
   "description": "Senchola JavaScript Assessment",
   "main": "index.js",
   "scripts": {
+    "deploy":"gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
