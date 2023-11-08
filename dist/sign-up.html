@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex justify-content-center align-items-center text-dark ">
+    <div class="signup d-flex justify-content-center">
+        <form action="./index.html">
+            <div class="form-title mb-4">
+                <h4 class=" text-white text-center">Don't have an account ?</h4>
+            </div>
+            <div class="form-inputs">
+                <div class="username-input position-relative mt-2 mb-2">
+                    <input type="text" class="form-control" name="username" id="username" required>
+                    <span class="position-absolute">username</span>
+                </div>
+                <div class="password-input d-flex position-relative mb-2 mt-3">
+                    <input type="password" class="form-control" name="password" id="password" required>
+                    <a href="#" onclick="showAndHidePassword(event)" class="position-absolute">
+                        <img src="./eye-alt-svgrepo-com.svg" alt="hide" width="20" id="show-and-hide">
+                    </a>
+                    <span class="position-absolute">password</span>
+                </div>
+                <div class="password-input d-flex position-relative mb-2 mt-3">
+                    <input type="password" class="form-control" name="password" id="confirm-password" required>
+                    <a href="#" onclick="showAndHidePassword(event)" class="position-absolute">
+                        <img src="./eye-alt-svgrepo-com.svg" alt="hide" width="20" id="confirm-show-and-hide">
+                    </a>
+                    <span class="position-absolute">confirm password</span>
+                </div>
+            </div>
+            <div class="form-submit">
+                <button class="btn w-100 mt-3">signup</button>
+                <a href="./index.html" class="btn w-100 mt-3">login</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+</html>
