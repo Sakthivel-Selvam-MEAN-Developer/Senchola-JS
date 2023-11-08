@@ -1,0 +1,102 @@
+body{
+    background-image: url('./mountains.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+span.position-absolute{
+    color: rgba(255, 255, 255, 0.6);
+    top: 10px;
+    left: 12px;
+    font-variant: all-petite-caps;
+    transition: all 200ms linear;
+}
+.form-inputs input,
+.form-inputs input:focus,
+.todo input,
+.todo input:focus{
+    background-color: rgba(0, 0, 0, 0.223);
+    padding: 15px 20px 10px 20px;
+    color: white;
+    border: none;
+    box-shadow: 1px 1px 5px -2px #ffffff4a;
+    width: 330px;
+}
+.todo input,
+.todo input:focus{
+    padding: 10px;
+}
+.form-inputs input:valid ~ span.position-absolute,
+.form-inputs input:focus ~ span.position-absolute{
+    top: -6px;
+    transform: scale(.8);
+}
+.form-inputs a{
+    right: 10px;
+    top: 10px;
+}
+.login,
+.signup,
+.todo{
+    padding: 20px 30px 30px 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.form-submit a,
+.form-submit button,
+.todo button
+{
+    background-color: #727ba4 !important;
+    border: none !important;
+    color: white !important;
+    letter-spacing: 1px;
+    font-variant: all-petite-caps;
+}
+.form-submit button:hover,
+.todo button:hover{
+    background-color: #494f6e !important;
+}
+.form-submit a{
+    border:1px solid #727ba4 !important;
+    background-color: transparent !important;
+}
+.form-submit a:hover{
+    background-color: #727ba43e !important;
+}
+.todo button{
+    padding: 10px 20px 12px 20px;
+}
+.tasks .task {
+    width: 455px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+
+@media (max-width:420px) {
+    .login input,
+    .signup input,
+    .todo input,
+    .login input:focus,
+    .signup input:focus,
+    .todo input:focus{
+        width: 260px;
+    }
+    .login,
+    .signup,
+    .todo{
+        padding: 15px 20px;
+    }
+    .todo{
+        flex-direction: column;
+    }
+    .todo input{
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+    .tasks .task{
+        width: 260px !important;
+    }
+}
