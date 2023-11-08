@@ -79,6 +79,16 @@ span.position-absolute{
     text-align: center;
     backdrop-filter: blur(10px);
 }
+.password-input #password-error,
+.form-inputs input:focus ~ span#password-error,
+.password-input #confirm-password-error,
+.form-inputs input:focus ~ span#confirm-password-error{
+    top: 47px;
+    left: 12px;
+    font-variant: all-petite-caps;
+    color: red;
+    transform: scale(1);
+}
 
 
 @media (max-width:420px) {

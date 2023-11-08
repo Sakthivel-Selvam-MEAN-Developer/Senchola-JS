@@ -19,23 +19,25 @@
                     <input type="text" class="form-control" name="username" id="username" required>
                     <span class="position-absolute">username</span>
                 </div>
-                <div class="password-input d-flex position-relative mb-2 mt-3">
-                    <input type="password" class="form-control" name="password" id="password" required>
+                <div class="password-input d-flex position-relative mb-4 mt-3">
+                    <input type="password" class="form-control" name="password" id="password" oninput="validatePassword()" required>
                     <a href="#" onclick="showAndHidePassword(event)" class="position-absolute">
                         <img src="./eye-alt-svgrepo-com.svg" alt="hide" width="20" id="show-and-hide">
                     </a>
                     <span class="position-absolute">password</span>
+                    <span class="position-absolute" id="password-error"></span>
                 </div>
                 <div class="password-input d-flex position-relative mb-2 mt-3">
-                    <input type="password" class="form-control" name="password" id="confirm-password" required>
+                    <input type="password" class="form-control" name="password" id="confirm-password" oninput="validatePasswordMatch()" required>
                     <a href="#" onclick="showAndHidePassword(event)" class="position-absolute">
                         <img src="./eye-alt-svgrepo-com.svg" alt="hide" width="20" id="confirm-show-and-hide">
                     </a>
                     <span class="position-absolute">confirm password</span>
+                    <span class="position-absolute" id="confirm-password-error"></span>
                 </div>
             </div>
             <div class="form-submit">
-                <button class="btn w-100 mt-3">signup</button>
+                <button class="btn w-100 mt-4">signup</button>
                 <a href="./index.html" class="btn w-100 mt-3">login</a>
             </div>
         </form>
