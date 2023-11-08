@@ -52,3 +52,24 @@ const changePasswordType = (imgId, inputId) => {
     }
 }
 
+const validatePassword = () => {
+    let pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,14}$/;
+
+    if(document.getElementById('password').value.match(pattern)){
+        document.getElementById('password-error').innerHTML = 'Password Valid';
+        document.getElementById('password-error').classList.add('text-success');
+    } else {
+        document.getElementById('password-error').innerHTML = 'Enter Valid Password';
+        document.getElementById('password-error').classList.remove('text-success');
+    }
+}
+
+const validatePasswordMatch = () => {
+    if(document.getElementById('password').value === document.getElementById('confirm-password').value){
+        document.getElementById('confirm-password-error').innerHTML = 'Password Matched';
+        document.getElementById('confirm-password-error').classList.add('text-success');
+    } else {
+        document.getElementById('confirm-password-error').innerHTML = 'Password Not Match';
+        document.getElementById('confirm-password-error').classList.remove('text-success');
+    }
+}
