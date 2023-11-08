@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.2.1",
+  "description": "Senchola JavaScript Assessment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Senchola",
+    "JS"
+  ],
+  "author": "Sakthivel Selvam",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "gh-pages": "^6.0.0"
+  }
+}
