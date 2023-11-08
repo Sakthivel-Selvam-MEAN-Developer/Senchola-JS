@@ -1,6 +1,10 @@
 const addTask = () => {
-    if(document.querySelector('#todo-input').value.length == 0)
-        alert("Kindly Enter Task Name!!!!")
+    if(document.querySelector('#todo-input').value.length == 0){
+        document.getElementById('error').innerHTML = 'Enter task and Then try to Add';
+        setTimeout(() => {
+            document.getElementById('error').innerHTML = '';
+        },2000)
+    }
     else {
         let task = document.createElement('div');
         task.classList.add('task', 'p-3', 'mt-2', 'mb-2', 'text-white', 'd-flex', 'justify-content-between', 'align-items-center')
@@ -12,7 +16,7 @@ const addTask = () => {
                     <img src="./delete-filled-svgrepo-com.svg" alt="delete" width="20">
                 </a>`;
         document.getElementById('tasks').appendChild(task);
-
+        document.getElementById('todo-input').value = '';
 
         var current_tasks = document.querySelectorAll(".delete");
         
@@ -23,9 +27,6 @@ const addTask = () => {
         }
     }
 }
-
-
-
 
 const showAndHidePassword = (event) => {
     let id = event.target.id;
